@@ -1,5 +1,4 @@
 # Read text input and calculate sum of frequencies, starting from 0
-
 freqs <- read.table("Day_01_Input.txt", header=F, stringsAsFactors=F)
 
 # Coerce to vector
@@ -10,7 +9,6 @@ print(sum(freqs))
 
 # Now, the challenge for Part 2 is to determine the first current frequency that
 # is reached TWICE. The list can loop more than once
-
 current.freq <- 0
 all.freqs <- 0
 
@@ -24,7 +22,3 @@ repeat {
     }
   }
 }
-
-
-
-
