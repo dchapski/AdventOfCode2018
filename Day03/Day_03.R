@@ -52,10 +52,7 @@ claimCheck <- function(coord.vec, sum.mat) {
     y1 <- coord.vec[i, "y1"]
     y2 <- coord.vec[i, "y2"]
     mat.coords <- sum.mat[x1:x2, y1:y2]
-    
     if(all(mat.coords == 1)) return(i)
-    
-    # if(sum(mat.coords) == (length(x1:x2) * length(y1:y2))) return(i)
   } # end i loop
 }
 
